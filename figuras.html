@@ -5,9 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geométricas</title>
+    <script src="./figuras.js"></script>
 </head>
 <body>
-    <h1>Figuras geométricas</h1>
-    <script src="./figuras.js"></script>
+    <header>
+        <h1>Figuras geométricas</h1>
+        <p>Primer taller curso práctico JS</p>
+    </header>
+    <section>
+        <h2>Calcula el área y perimetro de un cuadrado</h2>
+        <form action="">
+            <label for="InputCuadrado">
+                Escribe cuánto mide cada lado de tu cuadrado:
+            </label>
+            <input id="InputCuadrado" type="number">
+            <button type="button" onclick="CalPeriCuadrado()">
+                Calcula el perimetro
+            </button>
+            <button type="button" onclick="CalAreaCuadrado()">
+                Calcula el área
+            </button>
+            <p>Área</p>
+            <p id="res_area_cua">0 cm^2 </p>
+            <p>Perímetro</p>
+            <p id="res_peri_cua">0 cm </p>
+        </form>
+    </section>
+    <section>
+        <h2>Calcula el área y perimetro de un Triangulo</h2>
+        <form action="">
+            <label for="">
+                Escribe cuánto mide cada lado de tu Triangulo:
+            </label>
+            <label for="InputLado1">Lado 1:</label>
+            <input id="InputLado1" type="number">
+            <label for="InputLado2">Lado 2:</label>
+            <input id="InputLado2" type="number">
+            <label for="InputBase">Base:</label>
+            <input id="InputBase" type="number">
+            <label for="InputAltura">Altura:</label>
+            <input id="InputAltura" type="number">
+            <button type="button" onclick="CalPeriTri()">
+                Calcula el perimetro
+            </button>
+            <button type="button" onclick="CalAreaTri()">
+                Calcula el área
+            </button>
+            <p>Área</p>
+            <p id="res_area_tri">0 cm^2 </p>
+            <p>Perímetro</p>
+            <p id="res_peri_tri">0 cm </p>
+        </form>
+    </section>
+    <section>
+            <h2>Calcula el área y perimetro de un Circulo</h2>
+            <form action="">
+                <label for="InputCir">
+                    Escribe cuánto mide el radio del circulo:
+                </label>
+                <input id="InputCir" type="number">
+                <button type="button" onclick="CalPeriCir()">
+                    Calcula el perimetro
+                </button>
+                <button type="button" onclick="CalAreaCir()">
+                    Calcula el área
+                </button>
+                <p>Área</p>
+                <p id="res_area_cir">0 cm^2 </p>
+                <p>Perímetro</p>
+                <p id="res_peri_cir">0 cm </p>
+            </form>
+    </section>
 </body>
 </html>
